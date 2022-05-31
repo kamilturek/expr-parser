@@ -1,7 +1,6 @@
 import unittest
 
-from stack import Stack
-from stack.stack import StackOverflowError
+from tdd.stack import Stack, StackOverflowError
 
 
 class TestStack(unittest.TestCase):
