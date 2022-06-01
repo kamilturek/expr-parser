@@ -43,9 +43,7 @@ class TestStack(unittest.TestCase):
         with self.assertRaises(TypeError) as ex:
             Stack('not int')
 
-        self.assertEqual(
-            str(ex.exception), 'Stack size must be an integer, not str'
-        )
+        self.assertEqual(str(ex.exception), 'Stack size must be an integer, not str')
 
     def test_stack_overflow_error(self):
         with self.assertRaises(StackOverflowError) as ex:

@@ -9,6 +9,9 @@ exclude = [
     ".venv/"
 ]
 
+[tool.black]
+skip-string-normalization = true
+
 [tool.poetry.dependencies]
 python = "^3.10"
 
